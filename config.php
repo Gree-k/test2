@@ -19,12 +19,12 @@ return [
                 'security' => 'ssl'
             ],
             'authorization' => [
-                'login' => 'test.for.o.server@gmail.com',
-                'password' => 'Ya159258'
+                'login' => '#',
+                'password' => '#'
             ]
         ],
         'admin' => [
-            'senior' => 'lolkaenot@mail.ru'
+            'senior' => '#'
         ]
 
     ]
