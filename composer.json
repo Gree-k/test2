@@ -1,0 +1,8 @@
+{
+  "require":{
+    "psr/log":"1.0.0",
+    "phpunit/php-timer":"1.*",
+    "twig/twig":"1.24.*",
+    "swiftmailer/swiftmailer":"v5.4.2"
+  }
+}
