@@ -21,28 +21,28 @@ class View
         ));
     }
 
-    public function display($template, $cont = '/default.twig')
+    public function displayTwig($template, $cont = '/default.twig')
     {
         $this->temp = $template;
         echo $this->twig->render($cont, $this->data);
     }
 
-//    public function display($template)
-//    {
-//        echo $this->render($template);
-//    }
-//
-//    public function render($template)
-//    {
-//        ob_start();
-//        foreach ($this->data as $k => $v) {
-//            $$k = $v;
-//        }
-//        include $template;
-//        $content = ob_get_contents();
-//        ob_end_clean();
-//        return $content;
-//    }
+    public function display($template)
+    {
+        echo $this->render($template);
+    }
+
+    public function render($template)
+    {
+        ob_start();
+        foreach ($this->data as $k => $v) {
+            $$k = $v;
+        }
+        include $template;
+        $content = ob_get_contents();
+        ob_end_clean();
+        return $content;
+    }
 
 
     public function goTo($uri)
