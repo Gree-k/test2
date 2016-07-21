@@ -30,8 +30,7 @@ class News extends AController
     protected function actionAllGen()
     {
         $this->view->news = \App\Models\News::findAllGenerator();
-        $this->view->temp = $this->view->render(__DIR__ . '/../templates/news/index.php');
-        $this->view->display(__DIR__ . '/../templates/main.php');
+        $this->view->display(__DIR__ . '/../templates/news/generators.php');
     }
 
 }
